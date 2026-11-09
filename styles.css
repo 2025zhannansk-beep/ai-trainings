@@ -26,3 +26,10 @@ header{background:#080c28;color:#f7fbff;border-bottom-color:#333a5a}.brand-mark{
 .contact-phone{display:inline-block;margin-top:18px;font-size:20px;color:#f7fbff;letter-spacing:.03em;border-bottom:1px solid #b2d3fa;padding:8px 3px}.contact-phone:hover{color:#b2d3fa}
 
 .format-caption>strong,.format-caption>span{display:block;margin-bottom:7px}.format-caption>strong{color:#080c28;font-weight:700}.format-caption u{text-underline-offset:3px}.final-cta .contact-handle,.final-cta .contact-phone{display:block;width:fit-content;margin-left:auto;margin-right:auto;font-size:13px;font-weight:400;color:#eceff5;line-height:1.6;letter-spacing:0;padding:0;border:0}.final-cta .contact-handle{margin-top:20px}.final-cta .contact-phone{margin-top:5px}.final-cta .contact-handle:hover,.final-cta .contact-phone:hover{color:#b2d3fa;text-decoration:underline;text-underline-offset:3px}
+
+/* One online course: equal package cards and safe navigation on narrow screens. */
+.price-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:960px;margin-inline:auto}
+.contact-name{margin-top:24px;font-size:16px}
+.course-card h3{font-size:clamp(24px,2.5vw,34px)}
+@media(min-width:881px) and (max-width:1180px){header{flex-wrap:wrap}nav{flex-wrap:wrap;justify-content:center}}
+@media(max-width:640px){.price-grid{grid-template-columns:1fr}.schedule-row{flex-wrap:wrap;gap:8px}.hero-date p{min-width:0}}
