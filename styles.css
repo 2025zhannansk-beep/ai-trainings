@@ -35,3 +35,5 @@ header{background:#080c28;color:#f7fbff;border-bottom-color:#333a5a}.brand-mark{
 @media(max-width:640px){.price-grid{grid-template-columns:1fr}.schedule-row{flex-wrap:wrap;gap:8px}.hero-date p{min-width:0}}
 
 .registration-action{margin:22px auto 0;max-width:580px}.registration-button{background:#c6e7c2;color:#080c28;white-space:normal;text-align:center}.registration-button:hover{background:#def1db}.final-cta .registration-note{font-size:13px;line-height:1.6;margin:12px auto 0;color:#eceff5}
+
+.audit-button{color:#eceff5;border-color:#b183c7;white-space:normal;text-align:center}.audit-button:hover{background:#b183c7;color:#080c28}
