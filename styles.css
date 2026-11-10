@@ -37,3 +37,9 @@ header{background:#080c28;color:#f7fbff;border-bottom-color:#333a5a}.brand-mark{
 .registration-action{margin:22px auto 0;max-width:580px}.registration-button{background:#c6e7c2;color:#080c28;white-space:normal;text-align:center}.registration-button:hover{background:#def1db}.final-cta .registration-note{font-size:13px;line-height:1.6;margin:12px auto 0;color:#eceff5}
 
 .audit-button{color:#eceff5;border-color:#b183c7;white-space:normal;text-align:center}.audit-button:hover{background:#b183c7;color:#080c28}
+
+/* The illustration is inside a text column, not a padded course card. */
+.detail-layout aside .course-illustration{width:100%;height:auto;max-width:100%;margin:22px 0 0;object-fit:contain}
+.detail-layout aside p,.detail-layout details>div,.small-print{color:#46546b}
+.small-print{font-size:13px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #b183c7;outline-offset:4px}

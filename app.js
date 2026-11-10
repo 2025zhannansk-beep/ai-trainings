@@ -7,3 +7,12 @@ menuButton.addEventListener('click', () => { const open = navigation.classList.t
 navigation.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', closeMenu));
 document.addEventListener('keydown', event => { if (event.key === 'Escape' && navigation.classList.contains('is-open')) { closeMenu(); menuButton.focus(); } });
 document.addEventListener('click', event => { if (!event.target.closest('header')) closeMenu(); });
+
+// Reveal lesson details when arriving from a programme card or a direct link.
+function revealLesson() {
+  if (!/^#lesson-[1-4]$/.test(location.hash)) return;
+  const lesson = document.querySelector(location.hash);
+  if (lesson) lesson.open = true;
+}
+window.addEventListener('hashchange', revealLesson);
+revealLesson();
